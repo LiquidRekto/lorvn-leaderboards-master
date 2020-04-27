@@ -1,6 +1,6 @@
 dj-database-url
 django
-django_heroku
+django-heroku
 gunicorn
 psycopg2
 pytz
