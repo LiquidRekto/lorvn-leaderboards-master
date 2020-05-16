@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import auto_redirect
+from leaderboard_main import views as lb_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('leaderboards/', include('leaderboard_main.urls'))
-    path('',auto_redirect)
+    path('',lb_view.auto_redirect)
 ]
