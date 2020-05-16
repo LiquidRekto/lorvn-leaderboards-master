@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from .views import auto_redirect
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('leaderboards/', include('leaderboard_main.urls'))
+    path('',auto_redirect)
 ]

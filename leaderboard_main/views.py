@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
 from django.http import HttpResponse
 import leaderboard_main.lorvn.database as player_db
 import datetime
@@ -30,3 +31,7 @@ def home(request):
 
 def about(request):
     return render(request, 'leaderboard/about.html')
+
+def auto_redirect(request):
+    request = redirect('/leaderboards/')
+    return request
