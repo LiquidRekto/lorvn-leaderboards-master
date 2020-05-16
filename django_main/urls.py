@@ -19,6 +19,6 @@ from leaderboard_main.views import auto_redirect
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('leaderboards/', include('leaderboard_main.urls'))
+    path('leaderboards/', include('leaderboard_main.urls')),
     path('',auto_redirect)
 ]
