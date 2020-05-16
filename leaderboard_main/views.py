@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import leaderboard_main.lorvn.database as player_db
 
 posts = [
     {
@@ -23,6 +24,7 @@ def home(request):
     context = {
         'posts':posts
     }
+    player_db.getMastersData('sea')
     return render(request, 'leaderboard/home.html', context)
 
 def about(request):
