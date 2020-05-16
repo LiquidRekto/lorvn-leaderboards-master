@@ -25,7 +25,7 @@ def home(request):
         'posts':posts
     }
     player_db.getMastersData('sea')
-    return render(request, 'leaderboard/home.html', context)
+    return render(request, 'leaderboard/leaderboard.html', context)
 
 def about(request):
     return render(request, 'leaderboard/about.html')
