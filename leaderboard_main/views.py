@@ -4,27 +4,15 @@ from django.http import HttpResponse, HttpResponseNotFound, Http404,  HttpRespon
 import leaderboard_main.lorvn.database as player_db
 import datetime
 
-posts = [
-    {
-        'author':'LiquidRekto',
-        'title':'Hello, World!',
-        'time':'20 Jan',
-        'content':'LuL'
-    },
-    {
-        'author':'SarahBong',
-        'title':'Hello, World 2!',
-        'time':'20 Feb',
-        'content':'Lmao'
-    }
-]
+
+data = []
 
 
 # Create your views here.
 
 def home(request):
     context = {
-        'posts':posts
+        'data': data
     }
     player_db.getMastersData('sea')
     return render(request, 'leaderboard/leaderboard.html', context)
