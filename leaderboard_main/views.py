@@ -33,5 +33,5 @@ def about(request):
     return render(request, 'leaderboard/about.html')
 
 def auto_redirect(request):
-    response = redirect('/leaderboard/')
+    response = redirect('/leaderboards/')
     return response
