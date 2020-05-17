@@ -4,7 +4,11 @@ import json
 
 riot_key = os.environ['RIOT_API']
 
-target_players = (json.loads(requests.get('data/players_data.json')))['players']
+dat_getter = open('data/players_data.json')
+
+target_players = (json.loads(dat_getter))['players']
+
+dat_getter.close()
 
 def getMastersData(region):
     detect = []
