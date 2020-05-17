@@ -16,8 +16,7 @@ def getMastersData(region):
     url = "https://%s.api.riotgames.com/lor/ranked/v1/leaderboards/?api_key=%s" % (region, riot_key)
     data = json.loads(requests.get(url).text)
     for player in target_players[region]:
-        print(player)
-        #for checker in data:
-            #if player['ingameID'] == checker['name']:
-            #    detect.append({ "facebook":player["facebook"], "ingameID":player["ingameID"], "rank":checker["rank"]})
+        for checker in data["players"]:
+            if player["ingameID"] == checker["name"]:
+                detect.append({ "facebook":player["facebook"], "ingameID":player["ingameID"], "rank":checker["rank"]})
     return detect
