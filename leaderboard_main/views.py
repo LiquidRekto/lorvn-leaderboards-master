@@ -11,10 +11,11 @@ data = []
 # Create your views here.
 
 def home(request):
+    sea_dat = player_db.getMastersData('sea')
     context = {
-        'data': data
+        'data': sea_dat
     }
-    player_db.getMastersData('sea')
+    
     return render(request, 'leaderboard/leaderboard.html', context)
 
 def about(request):
