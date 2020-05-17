@@ -4,7 +4,7 @@ import json
 
 riot_key = os.environ['RIOT_API']
 
-dat_getter = open(os.path.join(os.path.dirname(__file__) , 'data/players_data.json'))
+dat_getter = open(os.path.join(os.path.dirname(__file__) , 'data/players_data.json')).read()
 
 target_players = (json.loads(dat_getter))['players']
 
