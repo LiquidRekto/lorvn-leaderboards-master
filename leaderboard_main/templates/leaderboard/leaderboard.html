@@ -82,7 +82,7 @@
         </table>
         {% block extrahead %}
         <script>
-            var players = {{ data|safe }};
+            var players = {{ players_data|safe }};
             var d = new Date();
             var out_time = (d.getHours() < 10 ? "0" + d.getHours() : d.getHours()) + ":" + 
                            (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + ":" + 
