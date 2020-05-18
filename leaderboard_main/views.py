@@ -3,6 +3,7 @@ from django.shortcuts import redirect
 from django.http import HttpResponse, HttpResponseNotFound, Http404,  HttpResponseRedirect
 import leaderboard_main.lorvn.database as player_db
 import datetime
+import os
 
 
 data = []
@@ -11,13 +12,14 @@ data = []
 # Create your views here.
 
 def home(request):
-    sea_dat = player_db.getMastersData('sea')
     context = {
-        'data': sea_dat
-        'americas': player_db.getMastersData('americas'),
-        'asia': player_db.getMastersData('asia'),
-        'europe': player_db.getMastersData('europe'),
-        'sea': player_db.getMastersData('sea')
+        'data': {
+            'americas': player_db.getMastersData('americas'),
+            'asia': player_db.getMastersData('asia'),
+            'europe': player_db.getMastersData('europe'),
+            'sea': player_db.getMastersData('sea')
+        },
+        'default_region': os.environ['DEFAULT_REGION']
 
     }
     
