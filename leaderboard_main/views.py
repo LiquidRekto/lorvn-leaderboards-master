@@ -12,13 +12,14 @@ data = []
 # Create your views here.
 
 def home(request):
+    dat = {
+        'americas': player_db.getMastersData('americas'),
+        'asia': player_db.getMastersData('asia'),
+        'europe': player_db.getMastersData('europe'),
+        'sea': player_db.getMastersData('sea')
+    }
     context = {
-        'data': {
-            'americas': player_db.getMastersData('americas'),
-            'asia': player_db.getMastersData('asia'),
-            'europe': player_db.getMastersData('europe'),
-            'sea': player_db.getMastersData('sea')
-        },
+        'data': str(dat),
         'default_region': os.environ['DEFAULT_REGION']
 
     }
