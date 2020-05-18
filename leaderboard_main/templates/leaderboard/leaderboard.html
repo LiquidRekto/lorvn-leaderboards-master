@@ -8,6 +8,22 @@
                 width: device-width;
             }
 
+            .gold {
+                background-color: rgb(252, 202, 3, 0.25);
+            }
+
+            .silver {
+                background-color: rgb(156, 156, 156, 0.25);
+            }
+
+            .bronze {
+                background-color: rgb(107, 66, 13, 0.25);
+            }
+
+            .fail {
+                background-color: rgb(200, 0, 0, 0.3);
+            }
+
 
             table {
                 font-family: Arial;
@@ -48,7 +64,7 @@
     </head>
     <body>
         <h2> Bảng xếp hạng rank Cao thủ (Group Cộng đồng Huyền Thoại Runeterra Việt Nam) </h2>
-        <h4> Cập nhật: </h4>
+        <h4 id="time"> Cập nhật: </h4>
         <h3> Region: </h3>
         <select id="regions">
             <option value="americas"> AMERICAS </option>
@@ -57,19 +73,86 @@
             <option value="sea"> SEA </option>
         </select>
         <h4> Hiện tại máy chủ này đang có người chơi cao thủ </h4>
-        <table>
+        <table id="main">
             <tr>
                 <th> Tên Facebook </th>
                 <th> Tên Ingame </th>
                 <th> Thứ hạng </th>
             </tr>
-            {% for player in data %}
-                <tr>
-                    <td> {{player.facebook}} </td>
-                    <td> {{player.ingameID}} </td>
-                    <td> {{player.rank}} </td>
-                </tr>
-            {% endfor %}
         </table>
+        {% block extrahead %}
+        <script>
+            var players = {{ data }}
+            var d = new Date();
+            var out_time = (d.getHours() < 10 ? "0" + d.getHours() : d.getHours()) + ":" + 
+                           (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + ":" + 
+                           (d.getSeconds() < 10 ? "0" + d.getSeconds() : d.getSeconds()) + " (UTC +7) Ngày: " + 
+                           (d.getDate() < 10 ? "0" + d.getDate() : d.getDate()) + "/" + 
+                           ((parseInt(d.getMonth()) + 1).toString() < 10 ? "0" + (parseInt(d.getMonth()) + 1).toString() : (parseInt(d.getMonth()) + 1).toString())  + "/" + 
+                           d.getFullYear();
+            document.getElementById("time").innerText = "Cập nhật: " + out_time;
+
+            var regions = document.getElementById('regions');
+            regions.value = {{ default_region }};
+            retrieveData(regions.value);
+
+            regions.addEventListener('change', function() {
+                retrieveData(regions.value);
+            });
+
+            function retrieveData(region) {
+                var data = players[region];
+                var tbl = document.getElementById('main');
+                tbl.textContent = '';
+                // TITLES
+                    var tr = document.createElement('tr');
+                    var face = document.createElement('th'); face.innerText = 'Tên Facebook';
+                    var ign = document.createElement('th'); ign.innerText = 'Tên Ingame';
+                    var place = document.createElement('th'); place.innerText = 'Thứ hạng';
+                    tr.appendChild(face); tr.appendChild(ign); tr.appendChild(place);
+                    tbl.appendChild(tr);
+                //
+                for (i = 0; i < data.length; i++) {
+                    
+                    
+                    var fb = document.createElement("td"); fb.innerText = data[i].facebook;
+                    var ign = document.createElement("td"); ign.innerText = data[i].ingameID;
+                    var rank = document.createElement("td"); rank.innerText = data[i].rank;
+
+                    switch(i) {
+                        case 0:
+                            fb.classList.add('gold');
+                            ign.classList.add('gold');
+                            rank.classList.add('gold');
+                            break;
+                        case 1:
+                            fb.classList.add('silver');
+                            ign.classList.add('silver');
+                            rank.classList.add('silver');
+                            break;
+                        case 2:
+               		        fb.classList.add('bronze');
+                            ign.classList.add('bronze');
+                            rank.classList.add('bronze');
+                            break;
+                        default:
+                            break;
+                    }  
+
+                    if (i > 9) {
+                        fb.classList.add('fail');
+                        ign.classList.add('fail');
+                        rank.classList.add('fail');
+                    }
+                
+                    var tr = document.createElement("tr");
+                    tr.appendChild(fb); tr.appendChild(ign); tr.appendChild(rank);
+                    tbl.appendChild(tr);
+                }
+            
+                
+            }
+        </script>
+        {% endblock %}
     </body>
 </html>

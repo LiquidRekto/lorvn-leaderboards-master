@@ -14,6 +14,11 @@ def home(request):
     sea_dat = player_db.getMastersData('sea')
     context = {
         'data': sea_dat
+        'americas': player_db.getMastersData('americas'),
+        'asia': player_db.getMastersData('asia'),
+        'europe': player_db.getMastersData('europe'),
+        'sea': player_db.getMastersData('sea')
+
     }
     
     return render(request, 'leaderboard/leaderboard.html', context)
