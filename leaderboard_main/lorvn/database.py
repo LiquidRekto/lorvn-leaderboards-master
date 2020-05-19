@@ -19,6 +19,9 @@ def getMastersData(region):
         for checker in data["players"]:
             if player["ingameID"] == checker["name"]:
                 detect.append({ "facebook":player["facebook"], "ingameID":player["ingameID"], "rank":checker["rank"]})
+    def sorter(e):
+        return e["rank"]
+    detect.sort(key=sorter)
     return detect
 
 def getMastersCount(region):
