@@ -24,7 +24,7 @@ def home(request):
 
     }
     
-    return render(request, 'leaderboard/leaderboard_devh2xJVloI9K32.html', context)
+    return render(request, 'leaderboard/leaderboard.html', context)
 
 def dev(request):
     dat = {
@@ -39,7 +39,7 @@ def dev(request):
 
     }
     
-    return render(request, 'leaderboard/leaderboard.html', context)
+    return render(request, 'leaderboard/leaderboard_devh2xJVloI9K32.html', context)
 
 
 def about(request):
