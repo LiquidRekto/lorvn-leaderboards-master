@@ -191,12 +191,12 @@
         <script>
 
             // config variables
-            DEFAULT_REGION = {{default_region|safe}};
+            DEFAULT_REGION = {{default_region}};
             CURRENT_REGION = DEFAULT_REGION;
 
             //
             
-            var players = {{data}}
+            var players = {{data|safe}};
             var d = new Date();
             var out_time = (d.getHours() < 10 ? "0" + d.getHours() : d.getHours()) + ":" + 
                            (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + ":" + 
