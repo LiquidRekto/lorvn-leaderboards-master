@@ -24,7 +24,23 @@ def home(request):
 
     }
     
+    return render(request, 'leaderboard/leaderboard_devh2xJVloI9K32.html', context)
+
+def dev(request):
+    dat = {
+        'americas': player_db.getMastersData('americas'),
+        'asia': player_db.getMastersData('asia'),
+        'europe': player_db.getMastersData('europe'),
+        'sea': player_db.getMastersData('sea')
+    }
+    context = {
+        'data': str(dat),
+        'default_region': os.environ['DEFAULT_REGION']
+
+    }
+    
     return render(request, 'leaderboard/leaderboard.html', context)
+
 
 def about(request):
     return render(request, 'leaderboard/about.html')

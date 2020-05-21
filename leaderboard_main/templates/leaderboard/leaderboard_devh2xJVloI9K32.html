@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+   <style>
+       @-ms-viewport {
+                width: device-width;
+        }
+
+       .pad-gold {
+            background: linear-gradient(45deg, rgba(245, 216, 19, 0.8), rgba( 244, 171, 19, 0.8));
+       }
+
+       .pad-silver {
+            background: linear-gradient(45deg, rgba(145, 145, 145, 0.8), rgba( 195, 195, 195, 0.8));
+       }
+
+       .pad-bronze {
+            background: linear-gradient(45deg, rgba(185, 125, 46, 0.8), rgba( 215, 108, 45, 0.8));
+       }
+
+       .pad-normal {
+            background-color: rgba(75, 13, 79, 0.8);
+       }
+  
+       body {
+           text-align: center;
+           background: linear-gradient(
+                    rgba(0, 0, 0, 0.7), 
+                    rgba(0, 0, 0, 0.7)
+                ),url('yas_main.jpg');
+           background-size: cover;
+           background-attachment: fixed;
+       }
+       h3 {
+           font-family: BeaufortforLOL;
+           font-weight: bold;
+	   text-align: center;
+           font-size: 1.5em;
+       }
+       h1 {
+           font-size: 2.5em;
+           font-family: Oswald VNF;
+           font-weight: normal;
+           text-align: center;
+           letter-spacing: 6px;
+       }
+       h2 {
+           font-family: BeaufortforLOL;
+           font-weight: bold;
+	   text-align: center;
+           font-size: 1.5em;
+       }
+       h4 {
+           font-family: Beaufort for LOL;
+           font-weight: normal;
+	   
+           font-size: 1em;
+       }
+
+       #button-pad {
+           display: inline-block;
+           text-align: center;
+	   width: 50%;
+       }
+
+       .rankbox-numpad { 
+           float: left;
+           color: white;
+           border: 1px solid transparent;
+           font-family: BeaufortforLOL;
+           font-weight: bold;
+           font-size: 2.5em;
+           width: 10%;
+           height: 100%;
+	   
+       }
+
+       .rankbox-numpad-text {
+          
+       }
+ 
+       .rankbox-container { 
+           display: inline-block;
+           text-align: center;
+           width: 60%;
+           height: 55px;
+           margin-bottom: 2%;
+       }
+
+       .rankbox-namepad {
+           float: left;
+           width: 70%;
+           background: linear-gradient(45deg, rgba(121, 72, 0, 0.9), rgba( 202, 121, 0, 0.9));
+           height: 100%;
+           border: 1px solid transparent;
+           color: #FFFFFF;
+           font-size: 2em;
+           font-family: Oswald VNF;
+           text-align: left;
+       }
+
+       .targeted {
+           background-color: #D18C26;
+        }
+
+       .targeted:hover {
+           background-color: #D18C26;
+        }
+
+       .regular {
+           background-color: rgba(218, 49, 230, 0.5);
+       }
+       .regular:hover { 
+           background-color: rgb(218, 49, 230);
+       }
+
+       .targeted:focus, .regular:focus {
+           outline: 0;
+       }
+
+     
+ 
+       .rankbox-mastericon {
+           width: 20%;
+           height: 230%;
+           background: url('RankedBadge_Master.png');
+           background-size: cover;
+           float: left;
+           margin-top: -3%;
+           margin-left: -5%;
+           color: #FFFFFF;
+           font-family: Univers LT W01;
+           font-size: 2.3em;
+       }
+
+       .error-text { 
+           color: #AAAAAA;
+           font-size: 2.2em;
+           font-family: BeaufortforLOL;
+           font-weight: bold;
+       }
+
+       .rankbox-mastericon-text {
+           position: absolute;
+           transform: translate(-55%, 60%);
+       }
+
+       .rankbox-namepad-text {
+          transform: translateY(50%);
+          margin-left: 2%;
+       }
+
+       .ingame-filter {
+          font-size: 0.8em;
+          color: #BBBBBB;
+       }
+
+       .region-btn {
+           display: inline-block;
+           border: 1px solid transparent;
+           width: 20%;
+           height: 40px;
+           color: #FFFFFF;
+           font-family: Oswald VNF;
+           letter-spacing: 5px;
+           font-size: 0.9em;
+           cursor: pointer;
+       }
+
+   </style>
+   <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+   </head>
+   <body>
+   	<h3 style="color:#F758C2; margin-bottom: 0px;"> BẢNG XẾP HẠNG CAO THỦ </h3>
+   	<h1 style="color:#CD9140; margin: 0px;"> CỘNG ĐỒNG HUYỀN THOẠI RUNETERRA VIỆT NAM </h3>
+   	<h2 style="color:#CD9140; margin: 0px;"> fb.com/groups/lorvietnam </h3>
+   	<h4 id="time" style="color:#FFFFFF; margin: 1% 0px;"> Cập nhật: 14:59:44 (UTC +7) Ngày: 18/05/2020 </h3>
+   	<h2 style="color:#FFFFFF; margin: 0px;"> SERVER </h3>
+	<div id="button-pad" style="margin-top: 2%;">
+	     <button value="americas" onclick="getStatistics(this.value);" style="border-top-left-radius: 15px; border-bottom-left-radius: 15px;" class="region-btn regular"> AMERICAS
+	     <button value="europe" onclick="getStatistics(this.value);" class="region-btn regular"> EUROPE
+	     <button value="asia" onclick="getStatistics(this.value);" class="region-btn regular"> ASIA
+	     <button value="sea" onclick="getStatistics(this.value);" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;" class="region-btn regular"> SEA
+	</div>
+        <h4 style="color:#FFFFFF; margin: 1% 0px; margin-bottom: 4%; font-size: 1.1em"> Hiện tại máy chủ này đang có <span style="color:#ea97ff;">69.420 </span> người chơi cao thủ </h3>
+        <div style="transform: scale(0.9);" id="list">
+        </div>
+        {% block extrahead%}
+        <script>
+
+            // config variables
+            DEFAULT_REGION = '{{default_region}}';
+            CURRENT_REGION = DEFAULT_REGION;
+
+            //
+            
+            var players = {{data}}
+            var d = new Date();
+            var out_time = (d.getHours() < 10 ? "0" + d.getHours() : d.getHours()) + ":" + 
+                           (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + ":" + 
+                           (d.getSeconds() < 10 ? "0" + d.getSeconds() : d.getSeconds()) + " (UTC +7) Ngày: " + 
+                           (d.getDate() < 10 ? "0" + d.getDate() : d.getDate()) + "/" + 
+                           ((parseInt(d.getMonth()) + 1).toString() < 10 ? "0" + (parseInt(d.getMonth()) + 1).toString() : (parseInt(d.getMonth()) + 1).toString())  + "/" + 
+                           d.getFullYear();
+            document.getElementById("time").innerText = "Cập nhật: " + out_time;
+
+
+            var btn_pad = document.getElementById('button-pad');
+            
+            window.onload = function() {
+                regionTarget(DEFAULT_REGION);
+            }
+
+            function getStatistics(region) {
+                regionTarget(region);
+            }
+
+	    function regionTarget(reg_value) {
+                for (i = 0; i < btn_pad.childNodes.length; i++) {
+                    if (btn_pad.childNodes[i].value != null || undefined) {
+                        console.log(btn_pad.childNodes[i].value == reg_value);
+                            if(btn_pad.childNodes[i].value == reg_value) {
+                            	btn_pad.childNodes[i].classList.add('targeted');
+                                btn_pad.childNodes[i].classList.remove('regular');
+                            }
+
+                            if(btn_pad.childNodes[i].value != reg_value) {
+                                console.log('achieved');
+                                btn_pad.childNodes[i].classList.add('regular');
+                            	btn_pad.childNodes[i].classList.remove('targeted');
+                            }
+                            
+                    }
+                } 
+                retrieveData(reg_value);
+            }
+
+
+            function retrieveData(region) {
+                var list = document.getElementById('list');
+                list.innerText = '';
+                var data = players[region]; var i=0;
+
+                for (i=0; i < data.length; i++) {
+                    var model = RankPanel((i+1).toString(), data[i].facebook, data[i].ingameID, data[i].rank); 
+                    list.appendChild(model);
+                }
+
+                if (data.length <= 0) {
+                    var lb = document.createElement('label');
+                    lb.classList.add('error-text');    
+                    lb.innerText = "Úi! Hổng có gì hết trơn!";
+                    list.appendChild(lb);
+                }
+
+                
+            
+                
+            }
+        
+            function RankPanel(placement, facebook, ingame, rank) {
+                 var pad;
+                 switch(placement) {
+                      case "1":
+                         pad = "pad-gold";
+                         break;
+                      case "2":
+                         pad = "pad-silver";
+                         break;
+                      case "3":
+                         pad = "pad-bronze";
+                         break;
+                      default:
+                         pad = "pad-normal";
+                         break;
+                  }
+var panel = document.createElement('div'); panel.classList.add('rankbox-container');
+                panel.innerHTML = `<div style="border-top-left-radius: 15px; border-bottom-left-radius: 15px;" class="rankbox-numpad ${pad}"> <label class="rankbox-numpad-text"> ${placement} </label> </div>
+                
+            
+            <div class="rankbox-namepad"> <label class="rankbox-namepad-text"> ${facebook} - <span class="ingame-filter"> ${ingame} </span> </label> </div>
+            <div class="rankbox-mastericon"> <label class="rankbox-mastericon-text"> ${rank} </label> </div>
+        </div>`;
+            return panel;
+                
+            }
+        </script>
+        {% endblock %}
+   </body>
+</html>
