@@ -27,5 +27,6 @@ def getMastersData(region):
 def getMastersCount(region):
     url = "https://%s.api.riotgames.com/lor/ranked/v1/leaderboards/?api_key=%s" % (region, riot_key)
     data = json.loads(requests.get(url).text)
+    print(len(data["players"]))
     return len(data["players"])
 
