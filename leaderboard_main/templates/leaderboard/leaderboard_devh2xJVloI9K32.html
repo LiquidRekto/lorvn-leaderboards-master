@@ -183,7 +183,7 @@
 	     <button value="asia" onclick="getStatistics(this.value);" class="region-btn regular"> ASIA
 	     <button value="sea" onclick="getStatistics(this.value);" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;" class="region-btn regular"> SEA
 	</div>
-        <h4 style="color:#FFFFFF; margin: 1% 0px; margin-bottom: 4%; font-size: 1.1em"> Hiện tại máy chủ này đang có <span style="color:#ea97ff;">69.420 </span> người chơi cao thủ </h3>
+        <h4 style="color:#FFFFFF; margin: 1% 0px; margin-bottom: 4%; font-size: 1.1em"> Hiện tại máy chủ này đang có <span id="player-count" style="color:#ea97ff;">69.420 </span> người chơi cao thủ </h3>
         <div style="transform: scale(0.9);" id="list">
         </div>
         {% block extrahead%}
@@ -196,6 +196,7 @@
             //
             
             var players = {{data|safe}};
+            var player_count = {{count|safe}};
             var d = new Date();
             var out_time = (d.getHours() < 10 ? "0" + d.getHours() : d.getHours()) + ":" + 
                            (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + ":" + 
@@ -234,6 +235,13 @@
                     }
                 } 
                 retrieveData(reg_value);
+                retrieveCount(reg_value);
+            }
+
+            function retrieveCount(region) {
+                var num = player_count[region];
+                var target = document.getElementById('player-count');
+                target.innerText = num.toString();
             }
 
 
