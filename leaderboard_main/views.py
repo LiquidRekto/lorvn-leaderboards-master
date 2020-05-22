@@ -33,10 +33,16 @@ def dev(request):
         'europe': player_db.getMastersData('europe'),
         'sea': player_db.getMastersData('sea')
     }
+    plyrs = {
+        'americas': player_db.getMastersCount('americas'),
+        'asia': player_db.getMastersCount('asia'),
+        'europe': player_db.getMastersCount('europe'),
+        'sea': player_db.getMastersCount('sea')
+    }
     context = {
         'data': str(dat),
-        'default_region': os.environ['DEFAULT_REGION']
-
+        'default_region': os.environ['DEFAULT_REGION'],
+        'count': str(plyrs)
     }
     
     return render(request, 'leaderboard/leaderboard_devh2xJVloI9K32.html', context)
