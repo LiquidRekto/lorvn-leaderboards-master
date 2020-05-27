@@ -1,272 +1,320 @@
 {
-    "players": {
-      "americas": [
-        {
-          "facebook": "Nguyễn Tuấn Khanh",
-          "ingameID": "y2vodoi"
-        },
-        {
-          "facebook": "Vi Quang Đức",
-          "ingameID": "TheMightyThor"
-        },
-        {
-          "facebook": "Nguyễn Dương Phúc",
-          "ingameID": "NDP"
-        },
-        {
-          "facebook": "Nguyen Binh",
-          "ingameID": "945"
-        },
-        {
-          "facebook": "Nguyễn Đình Minh Nhật",
-          "ingameID": "Thehp9"
-        },
-        {
-          "facebook": "Vũ Xuân Trường",
-          "ingameID": "KiepDenDo"
-        },
-        {
-          "facebook": "Huỳnh Thanh Nguyên",
-          "ingameID": "TK Styx"
-        },
-        {
-          "facebook": "Gary \"fizdarth\" Gan",
-          "ingameID": "FizdarthM8NA"
-        },
-        {
-          "facebook": "Minh Tiến",
-          "ingameID": "VampireNight"
-        },
-        {
-          "facebook": "Ngô Đôn",
-          "ingameID": "King Engine"
-        },
-        {
-          "facebook": "Le Quan",
-          "ingameID": "Vinaboi"
-        },
-        {
-          "facebook": "Nhật Tân",
-          "ingameID": "Megalomaniac"
-        },
-        {
-          "facebook": "Quan Vinh",
-          "ingameID": "Carolyn"
-        },
-        {
-          "facebook": "Hoàng Phan",
-          "ingameID": "FBTICE"
-        },
-        {
-          "facebook": "Văn Tú",
-          "ingameID": "UsamiNeeSan"
-        },
-        {
-          "facebook": "Trần Tiến Ân",
-          "ingameID": "Abysss"
-        },
-        {
-          "facebook": ":Nguyễn Đức",
-          "ingameID": "Gecko312"
-        },
-        {
-          "facebook": "Kim Hoang",
-          "ingameID": "VNLionV"
-        },
-        {
-          "facebook": "Lê Hiếu",
-          "ingameID": "HieuAnCom"
-        },
-        {
-          "facebook": "Tien Khanh Le",
-          "ingameID": "TuNgu"
-        },
-        {
-          "facebook": "Phan Điền",
-          "ingameID": "B R U H"
-        },
-        {
-          "facebook": "Nguyễn Minh Quân",
-          "ingameID": "FurryLord"
-        },
-        {
-          "facebook": "Đỗ Minh Hiếu",
-          "ingameID": "mewz"
-        },
-        {
-          "facebook": "Minh Nguyễn",
-          "ingameID": "TommyShelby"
-        },
-        {
-          "facebook": "Trang Tuấn Kiệt",
-          "ingameID": "Zedow"
-        },
-        {
-          "facebook": "Công Lê",
-          "ingameID": "Iodern"
-        },
-        {
-          "facebook": "Quách Thành Nghiệp",
-          "ingameID": "Karna"
-        },
-        {
-          "facebook": "Minh Duc Ta",
-          "ingameID": "NotFunStuff"
-        },
-        {
-          "facebook": "Phước Nguyên",
-          "ingameID": "DenMaster"
-        },
-        {
-          "facebook": "Hung Le",
-          "ingameID": "Trumpiter"
-        },
-        {
-          "facebook": "Khủng Long",
-          "ingameID": "ColorVN"
-        },
-        {
-          "facebook": "Khải Lê",
-          "ingameID": "shisa"
-        },
-        {
-          "facebook": "phuc nguyen",
-          "ingameID": "sirin"
-        },
-        {
-          "facebook": "Hoàng Lei",
-          "ingameID": "LeiLostXD"
-        },
-        {
-          "facebook": "Nguyên Trần",
-          "ingameID": "BoxGamingKudo"
-        },
-        {
-          "facebook": "Trần Vũ Đức",
-          "ingameID": "DeaDinSiDE"
-        },
-        {
-          "facebook": "Hoàng Vũ Duy Long",
-          "ingameID": "KhủngLongXinhXắn"
-        },
-        {
-          "facebook": "Hoàng Hải",
-          "ingameID": "my fishes"
-        },
-        {
-          "facebook": "Nguyên Võ",
-          "ingameID": "rogAKAnn"
-        },
-        {
-          "facebook": "Nguyễn Thành Phong",
-          "ingameID": "Godofwind123"
-        }
-      ],
-      "europe": [
-        {
-          "facebook": "Lê Hồng Nhật",
-          "ingameID": "Kaori"
-        },
-        {
-          "facebook": "Nguyen Binh",
-          "ingameID": "946"
-        },
-        {
-          "facebook": "Duy Nguyễn Khánh",
-          "ingameID": "i am dio3"
-        },
-        {
-          "facebook": "Nguyễn D. Quyết",
-          "ingameID": "QuatDaiPhu"
-        },
-        {
-          "facebook": "Ngọc Huy",
-          "ingameID": "Naoo"
-        },
-        {
-          "facebook": "Lê Đăng Khánh",
-          "ingameID": "herku"
-        }
-      ],
-      "asia": [
-        {
-          "facebook": "Vũ Đức Tuấn",
-          "ingameID": "Tuan Vu Channel"
-        },
-        {
-          "facebook": "Mỳ Tôm",
-          "ingameID": "9105"
-        },
-        {
-          "facebook": "Nguyễn Cửu Ty",
-          "ingameID": "iVietnameseˆ"
-        },
-        {
-          "facebook": "Silver Ring",
-          "ingameID": "Silver/Bloodstone"
-        },
-        {
-          "facebook": "Trần Đại Vỹ",
-          "ingameID": "Đéo Ngủ"
-        },
-        {
-          "facebook": "Lê Phước Hưng",
-          "ingameID": "Raitderr"
-        }
-      ],
-      "sea": [
-        {
-          "facebook": "Kim Hoang",
-          "ingameID": "VNLionV"
-        },
-        {
-          "facebook": "Vũ Xuân Trường",
-          "ingameID": "FatherMilk"
-        },
-        {
-          "facebook": "Nhật Thanh",
-          "ingameID": "SBTCAmicis"
-        },
-        {
-          "facebook": "Bò Đen",
-          "ingameID": "Blackatss163"
-        },
-        {
-          "facebook": "Bảo Phan",
-          "ingameID": "Hằng"
-        },
-        {
-          "facebook": "Hà Tuấn Anh",
-          "ingameID": "VN COVID 19"
-        },
-        {
-          "facebook": "Duy Vương",
-          "ingameID": "GenGen"
-        },
-        {
-          "facebook": "Phuc Hung",
-          "ingameID": "Psyluck"
-        },
-        {
-          "facebook": "Lapper nets",
-          "ingameID": "Concax"
-        },
-        {
-          "facebook": "Vũ Thắng",
-          "ingameID": "Koheita"
-        },
-        {
-          "facebook": "Quang Duong",
-          "ingameID": "Marsa"
-        },
-        {
-          "facebook": "Hắc Long",
-          "ingameID": "Sucmanhhucau12"
-        },
-        {
-          "facebook": "Nguyen Binh",
-          "ingameID": "947"
-        }
-      ]
-    }
+  "players": {
+    "americas": [
+      {
+        "facebook": "Nguyễn Tuấn Khanh",
+        "ingameID": "y2vodoi"
+      },
+      {
+        "facebook": "Vi Quang Đức",
+        "ingameID": "TheMightyThor"
+      },
+      {
+        "facebook": "Nguyễn Dương Phúc",
+        "ingameID": "NDP"
+      },
+      {
+        "facebook": "Nguyen Binh",
+        "ingameID": "945"
+      },
+      {
+        "facebook": "Nguyễn Đình Minh Nhật",
+        "ingameID": "Thehp9"
+      },
+      {
+        "facebook": "Vũ Xuân Trường",
+        "ingameID": "KiepDenDo"
+      },
+      {
+        "facebook": "Huỳnh Thanh Nguyên",
+        "ingameID": "TK Styx"
+      },
+      {
+        "facebook": "Gary \"fizdarth\" Gan",
+        "ingameID": "FizdarthM8NA"
+      },
+      {
+        "facebook": "Minh Tiến",
+        "ingameID": "VampireNight"
+      },
+      {
+        "facebook": "Ngô Đôn",
+        "ingameID": "King Engine"
+      },
+      {
+        "facebook": "Le Quan",
+        "ingameID": "Vinaboi"
+      },
+      {
+        "facebook": "Nhật Tân",
+        "ingameID": "Megalomaniac"
+      },
+      {
+        "facebook": "Quan Vinh",
+        "ingameID": "Carolyn"
+      },
+      {
+        "facebook": "Hoàng Phan",
+        "ingameID": "FBTICE"
+      },
+      {
+        "facebook": "Văn Tú",
+        "ingameID": "UsamiNeeSan"
+      },
+      {
+        "facebook": "Trần Tiến Ân",
+        "ingameID": "Abysss"
+      },
+      {
+        "facebook": ":Nguyễn Đức",
+        "ingameID": "Gecko312"
+      },
+      {
+        "facebook": "Kim Hoang",
+        "ingameID": "VNLionV"
+      },
+      {
+        "facebook": "Lê Hiếu",
+        "ingameID": "HieuAnCom"
+      },
+      {
+        "facebook": "Tien Khanh Le",
+        "ingameID": "TuNgu"
+      },
+      {
+        "facebook": "Phan Điền",
+        "ingameID": "B R U H"
+      },
+      {
+        "facebook": "Nguyễn Minh Quân",
+        "ingameID": "FurryLord"
+      },
+      {
+        "facebook": "Đỗ Minh Hiếu",
+        "ingameID": "mewz"
+      },
+      {
+        "facebook": "Minh Nguyễn",
+        "ingameID": "TommyShelby"
+      },
+      {
+        "facebook": "Trang Tuấn Kiệt",
+        "ingameID": "Zedow"
+      },
+      {
+        "facebook": "Công Lê",
+        "ingameID": "Iodern"
+      },
+      {
+        "facebook": "Quách Thành Nghiệp",
+        "ingameID": "Karna"
+      },
+      {
+        "facebook": "Minh Duc Ta",
+        "ingameID": "NotFunStuff"
+      },
+      {
+        "facebook": "Phước Nguyên",
+        "ingameID": "DenMaster"
+      },
+      {
+        "facebook": "Hung Le",
+        "ingameID": "Trumpiter"
+      },
+      {
+        "facebook": "Khủng Long",
+        "ingameID": "ColorVN"
+      },
+      {
+        "facebook": "Khải Lê",
+        "ingameID": "shisa"
+      },
+      {
+        "facebook": "phuc nguyen",
+        "ingameID": "sirin"
+      },
+      {
+        "facebook": "Hoàng Lei",
+        "ingameID": "LeiLostXD"
+      },
+      {
+        "facebook": "Nguyên Trần",
+        "ingameID": "BoxGamingKudo"
+      },
+      {
+        "facebook": "Trần Vũ Đức",
+        "ingameID": "DeaDinSiDE"
+      },
+      {
+        "facebook": "Hoàng Vũ Duy Long",
+        "ingameID": "KhủngLongXinhXắn"
+      },
+      {
+        "facebook": "Hoàng Hải",
+        "ingameID": "my fishes"
+      },
+      {
+        "facebook": "Nguyên Võ",
+        "ingameID": "rogAKAnn"
+      },
+      {
+        "facebook": "Nguyễn Thành Phong",
+        "ingameID": "Godofwind123"
+      },
+      {
+        "facebook": "Lam Nguyen",
+        "ingameID": "LamNguyen"
+      },
+      {
+        "facebook": "Hung Le",
+        "ingameID": "Trumpiter"
+      },
+      {
+        "facebook": "Huỳnh Bảo Khang",
+        "ingameID": "kagnag"
+      },
+      {
+        "facebook": "Ngô Hà Quốc Minh",
+        "ingameID": "MingTuss"
+      },
+      {
+        "facebook": "Somau",
+        "ingameID": "Minh KOG"
+      },
+      {
+        "facebook": "Thành Vinh",
+        "ingameID": "23U3IHIVW28"
+      }
+    ],
+    "europe": [
+      {
+        "facebook": "Lê Hồng Nhật",
+        "ingameID": "Kaori"
+      },
+      {
+        "facebook": "Nguyen Binh",
+        "ingameID": "946"
+      },
+      {
+        "facebook": "Duy Nguyễn Khánh",
+        "ingameID": "i am dio3"
+      },
+      {
+        "facebook": "Nguyễn D. Quyết",
+        "ingameID": "QuatDaiPhu"
+      },
+      {
+        "facebook": "Ngọc Huy",
+        "ingameID": "Naoo"
+      },
+      {
+        "facebook": "Lê Đăng Khánh",
+        "ingameID": "herku"
+      },
+      {
+        "facebook": "Bear Võ",
+        "ingameID": "BearVox"
+      },
+      {
+        "facebook": "TsuyoshiDaichi",
+        "ingameID": "DaichiLoR"
+      }
+    ],
+    "asia": [
+      {
+        "facebook": "Vũ Đức Tuấn",
+        "ingameID": "Tuan Vu Channel"
+      },
+      {
+        "facebook": "Mỳ Tôm",
+        "ingameID": "9105"
+      },
+      {
+        "facebook": "Nguyễn Cửu Ty",
+        "ingameID": "iVietnameseˆ"
+      },
+      {
+        "facebook": "Silver Ring",
+        "ingameID": "Silver/Bloodstone"
+      },
+      {
+        "facebook": "Trần Đại Vỹ",
+        "ingameID": "Đéo Ngủ"
+      },
+      {
+        "facebook": "Lê Phước Hưng",
+        "ingameID": "Raitderr"
+      }
+    ],
+    "sea": [
+      {
+        "facebook": "Kim Hoang",
+        "ingameID": "VNLionV"
+      },
+      {
+        "facebook": "Vũ Xuân Trường",
+        "ingameID": "FatherMilk"
+      },
+      {
+        "facebook": "Nhật Thanh",
+        "ingameID": "SBTCAmicis"
+      },
+      {
+        "facebook": "Bò Đen",
+        "ingameID": "Blackatss163"
+      },
+      {
+        "facebook": "Bảo Phan",
+        "ingameID": "Hằng"
+      },
+      {
+        "facebook": "Hà Tuấn Anh",
+        "ingameID": "VN COVID 19"
+      },
+      {
+        "facebook": "Duy Vương",
+        "ingameID": "GenGen"
+      },
+      {
+        "facebook": "Phuc Hung",
+        "ingameID": "Psyluck"
+      },
+      {
+        "facebook": "Lapper nets",
+        "ingameID": "Concax"
+      },
+      {
+        "facebook": "Vũ Thắng",
+        "ingameID": "Koheita"
+      },
+      {
+        "facebook": "Quang Duong",
+        "ingameID": "Marsa"
+      },
+      {
+        "facebook": "Hắc Long",
+        "ingameID": "Sucmanhhucau12"
+      },
+      {
+        "facebook": "Nguyen Binh",
+        "ingameID": "947"
+      },
+      {
+        "facebook": "Vũ Thiên Lê",
+        "ingameID": "vkSimon702"
+      },
+      {
+        "facebook": "Vàng 4 ",
+        "ingameID": "MiWa"
+      },
+      {
+        "facebook": "Nhu le",
+        "ingameID": "ChieuAnh"
+      },
+      {
+        "facebook": "Huỳnh Thiên Phú",
+        "ingameID": "BinzP"
+      }
+    ]
   }
+}
