@@ -52,5 +52,5 @@ def about(request):
     return render(request, 'leaderboard/about.html')
 
 def auto_redirect(request):
-    response = redirect('/leaderboards/')
+    response = redirect('/leaderboards/beta/')
     return response
