@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Oswald VNF;
+    src: url('src/oswald-vnf-regular.ttf');
+}
+
+@font-face {
+    font-family: BeaufortforLOL;
+    font-weight: bold;
+    src: url('src/Beaufort\ for\ LOL\ Bold.otf')
+}
+
+@font-face {
+    font-family: Beaufort for LOL;
+    src: url('src/BeaufortforLOL-Regular.otf')
+}
+
+@font-face {
+    font-family: Univers LT W01;
+    src: url('src/UniversLTW01-59UltCondensed.otf')
+}
