@@ -264,6 +264,18 @@
       {
         "facebook": "Thái Hưng Vũ",
         "ingameID": "ChocoVani"
+      },
+      {
+        "facebook": "Khải Nguyễn",
+        "ingameID": "SoftStone"
+      },
+      {
+        "facebook": "Lê Văn Giáp",
+        "ingameID": "DemonOfDarkness"
+      },
+      {
+        "facebook": "Nguyễn Đình Thiên Phúc",
+        "ingameID": "TomVvMarsin"
       }
     ],
     "europe": [
@@ -324,6 +336,10 @@
       {
         "facebook": "Lê Phước Hưng",
         "ingameID": "Raitderr"
+      },
+      {
+        "facebook": "Vũ Thanh Tùng",
+        "ingameID": "青いカボチャ"
       }
     ],
     "sea": [
@@ -388,10 +404,6 @@
         "ingameID": "MiWa"
       },
       {
-        "facebook": "Nhu le",
-        "ingameID": "ChieuAnh"
-      },
-      {
         "facebook": "Huỳnh Thiên Phú",
         "ingameID": "BinzP"
       },
@@ -422,6 +434,18 @@
       {
         "facebook": "Nguyễn Duy Khánh",
         "ingameID": "Warlancer"
+      },
+      {
+        "facebook": "Phạm Huy",
+        "ingameID": "Huy06"
+      },
+      {
+        "facebook": "Lê Trung Anh",
+        "ingameID": "Kà Rem"
+      },
+      {
+        "facebook": "Hoàng Minh",
+        "ingameID": "Katarina"
       }
     ]
   }

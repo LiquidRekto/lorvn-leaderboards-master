@@ -10,7 +10,8 @@ target_players = (json.loads(dat_getter.read()))['players']
 
 dat_getter.close()
 
-def getMastersData(region):
+def getMastersData(region, state):
+    counter = 0
     detect = []
     sorted_players = []
     url = "https://%s.api.riotgames.com/lor/ranked/v1/leaderboards/?api_key=%s" % (region, riot_key)
@@ -19,10 +20,15 @@ def getMastersData(region):
         for checker in data["players"]:
             if player["ingameID"] == checker["name"]:
                 detect.append({ "facebook":player["facebook"], "ingameID":player["ingameID"], "rank":checker["rank"]})
+                counter += 1
     def sorter(e):
         return e["rank"]
     detect.sort(key=sorter)
-    return detect
+    if (state == "list"):
+        return detect
+    elif (state == "count"):
+        return counter
+
 
 def getMastersCount(region):
     url = "https://%s.api.riotgames.com/lor/ranked/v1/leaderboards/?api_key=%s" % (region, riot_key)
